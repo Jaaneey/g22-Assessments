@@ -1,3 +1,30 @@
+// IGNORE THIS!!
+var classroom = {
+    instructors: [
+      {
+        name: "Parker",
+        favTopic: ["hoisting", "merge conflicts"]
+      },
+      {
+        name: "Janey",
+        favTopic: ["angular", "hoisting"]
+      },
+      {
+        name: "Elie",
+        favTopic: ["jQuery", "Node"]
+      },
+      {
+        name: "Matt",
+        favTopic: ["DOM", "Math"]
+      },
+      {
+        name: "Tim",
+        favTopic: ["Computer Science", "Databases"]
+      },
+    ]
+  };
+
+
 module.exports = {
 
   // fill in this array with all of the primitive types in JavaScript make these ALL a string (there are 5 we are looking for)
