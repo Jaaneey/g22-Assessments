@@ -62,7 +62,7 @@ module.exports = {
 
   },
 
-  // Write the code necessary to print out the total number of favorite topics in the nested data structure
+  // Write the code necessary to return the total number of favorite topics in the nested data structure
   returnAllFavoriteTopics: function(){
 
   },
