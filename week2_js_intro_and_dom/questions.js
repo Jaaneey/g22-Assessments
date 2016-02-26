@@ -59,30 +59,30 @@ module.exports = {
 
   // Nested Data Structures
 
-  classroom: {
-    instructors: [
-    {
-      name: "Parker",
-      favTopic: ["hoisting", "merge conflicts"]
-    },
-    {
-      name: "Janey",
-      favTopic: ["angular", "hoisting"]
-    },
-    {
-      name: "Elie",
-      favTopic: ["jQuery", "Node"]
-    },
-    {
-      name: "Matt",
-      favTopic: ["DOM", "Math"]
-    },
-    {
-      name: "Tim",
-      favTopic: ["Computer Science", "Databases"]
-    },
-    ]
-  },
+  // classroom: {
+  //   instructors: [
+  //   {
+  //     name: "Parker",
+  //     favTopic: ["hoisting", "merge conflicts"]
+  //   },
+  //   {
+  //     name: "Janey",
+  //     favTopic: ["angular", "hoisting"]
+  //   },
+  //   {
+  //     name: "Elie",
+  //     favTopic: ["jQuery", "Node"]
+  //   },
+  //   {
+  //     name: "Matt",
+  //     favTopic: ["DOM", "Math"]
+  //   },
+  //   {
+  //     name: "Tim",
+  //     favTopic: ["Computer Science", "Databases"]
+  //   },
+  //   ]
+  // },
 
   // write a function that returns an array of all the names of the instructors in the classroom
   returnAllNames: function(){
