@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 
 describe("#drop", function(){
   it("Creates a slice of array with n elements dropped from the beginning.", function(){
-    expect(answers.drop([1,2,3,4],2)).to.eql([2,4]);
+    expect(answers.drop([1,2,3,4],2)).to.eql([3,4]);
   });
 
   it("Returns a copy of the array if n is zero or less", function(){
@@ -17,7 +17,7 @@ describe("#drop", function(){
 
 describe("#join", function(){
   it("Converts all elements in array or string into a new string separated by separator.", function(){
-    expect(answers.join("hello","zz")).to.eql("hzzezzlzzlzzo");
+    expect(answers.join("hello","zz")).to.eql("hzzezzlzzlzzozz");
     expect(answers.join([1,2,3,4],"zz")).to.eql("1zz2zz3zz4zz");
   });
   it("Returns an empty string if the data type is an object, boolean, null or undefined", function(){
@@ -42,7 +42,7 @@ describe("#repeat", function(){
   it("concatenates the given value with the number of times specificed in the second parameter", function(){
     expect(answers.repeat("hello",2)).to.equal("hellohello");
     expect(answers.repeat(false,2)).to.equal("falsefalse");
-    expect(answers.repeat({},2)).to.equal("[Object object][Object object]");
+    expect(answers.repeat({},2)).to.equal("[object Object][object Object]");
   });
   it("returns an empty string if the number is 0 or less", function(){
     expect(answers.repeat(1,0)).to.equal("");
@@ -54,7 +54,7 @@ describe("#containsMoreThanOne", function(){
   it("returns true if the value that is being searched for exists twice in an array or string", function(){
     expect(answers.containsMoreThanOne("hello","l")).to.equal(true);
     expect(answers.containsMoreThanOne([1,2,2,3],2)).to.equal(true);
-    expect(answers.containsMoreThanOne(["f","f","hello"],"f")).to.equal(false);
+    expect(answers.containsMoreThanOne(["f","f","hello"],"f")).to.equal(true);
     expect(answers.containsMoreThanOne(["hi","hey"],"h")).to.equal(false);
   });
 });
@@ -73,15 +73,15 @@ describe("#letterCount", function(){
 });
 
 describe("#flatten", function(){
-  it("", function(){
+  it("flattens an array with one nested level", function(){
     var sampleArray = [1,[2],[3],4];
     expect(answers.flatten(sampleArray)).to.eql([1,2,3,4]);
   });
 });
 
 describe("#flattenDeep", function(){
-  it("", function(){
+  it("flattens an array with multiple levels of nesting", function(){
     var nestedArray = [[[[[[[[[[[[[[[[[[[[[[[[[[[[1, [2], [[[[3]]], [[[4]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]];
-    expect(answers.flatten(nestedArray)).to.eql([1,2,3,4]);
+    expect(answers.flattenDeep(nestedArray)).to.eql([1,2,3,4]);
   });
 });
