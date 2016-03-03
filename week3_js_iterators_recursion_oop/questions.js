@@ -50,8 +50,8 @@ function flatten(arr){
 }
 
 function flattenDeep(arr) {
-  return arr.reduce(function (a, b) {
-    return a.concat(Array.isArray(b) ? flattenDeep(b) : b);
+  return arr.reduce(function (start, next) {
+    return start.concat(Array.isArray(next) ? flattenDeep(next) : next);
   }, []);
 }
 
