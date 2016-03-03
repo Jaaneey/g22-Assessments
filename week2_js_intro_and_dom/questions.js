@@ -27,11 +27,11 @@ var classroom = {
 
 module.exports = {
 
-  // fill in this array with all of the primitive types in JavaScript make these ALL a string (there are 5 we are looking for)
+  // fill in this array with all of the primitive types in JavaScript make these are ALL a string (there are 5 we are looking for)
   allPrimitiveDataTypes: [],
 
-  // fill in all the falsey values in this array (there are 6)
-  allFalseyValues: [],
+  // fill in all the falsey values in this array (there are 6 - we'll even give you one!)
+  allFalseyValues: ["NaN"],
 
   // fill in four common JS Errors we learned about in class
   fourCommonJSErrors: [],
