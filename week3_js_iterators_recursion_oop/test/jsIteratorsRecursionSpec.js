@@ -73,14 +73,14 @@ describe("#letterCount", function(){
 });
 
 describe("#flatten", function(){
-  it("", function(){
+  it("flattens an array with one nested level", function(){
     var sampleArray = [1,[2],[3],4];
     expect(answers.flatten(sampleArray)).to.eql([1,2,3,4]);
   });
 });
 
 describe("#flattenDeep", function(){
-  it("", function(){
+  it("flattens an array with multiple levels of nesting", function(){
     var nestedArray = [[[[[[[[[[[[[[[[[[[[[[[[[[[[1, [2], [[[[3]]], [[[4]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]];
     expect(answers.flatten(nestedArray)).to.eql([1,2,3,4]);
   });
